@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — SwiftFX - Currency Converter</title>
+  <script src="config.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="app-icon.png" alt="" class="nav-logo">
+        <span class="nav-brand-full">SwiftFX - Currency Converter</span>
+        <span class="nav-brand-short">SwiftFX</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Terms of Use</h1>
+    <p class="subtitle">Effective date: <span data-config="effectiveDate">August 22, 2026</span></p>
+
+    <p>By downloading, installing, or using <span data-config="appName">SwiftFX - Currency Converter</span> (the "App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, do not use the App.</p>
+
+    <h2>1. Description of Service</h2>
+    <p>The App provides currency conversion using exchange rates sourced from the Frankfurter API, which derives its data from the European Central Bank (ECB). The App supports over 150 currencies and offers features including real-time conversion, offline cached rates, and historical exchange rate charts.</p>
+    <p><strong>Exchange rates provided by the App are indicative only and should not be relied upon for financial transactions.</strong> Actual rates offered by banks, payment processors, or currency exchanges may differ.</p>
+
+    <h2>2. Subscriptions and Billing</h2>
+    <p>The App offers a free tier (ad-supported) and a premium subscription with the following plans:</p>
+    <ul>
+      <li><strong>Monthly:</strong> $2.99 per month</li>
+      <li><strong>Yearly:</strong> $12.99 per year</li>
+    </ul>
+    <p>Both plans include a 3-day free trial for new subscribers.</p>
+    <ul>
+      <li><strong>Payment:</strong> Subscriptions are processed through Apple's App Store via your Apple ID account.</li>
+      <li><strong>Auto-renewal:</strong> Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period.</li>
+      <li><strong>Cancellation:</strong> You can manage and cancel your subscription at any time through Settings &gt; [Your Name] &gt; Subscriptions on your device.</li>
+      <li><strong>Refunds:</strong> Refunds are handled by Apple in accordance with their refund policies.</li>
+    </ul>
+
+    <h2>3. Premium Features</h2>
+    <p>Premium subscribers receive the following benefits:</p>
+    <ul>
+      <li>Ad-free experience</li>
+      <li>Extended historical charts (6 months, 1 year, and custom date ranges)</li>
+      <li>Hourly automatic rate refresh</li>
+      <li>Unlimited manual rate refresh</li>
+    </ul>
+
+    <h2>4. Acceptable Use</h2>
+    <p>You agree to use the App only for lawful purposes and in accordance with these terms. You agree not to:</p>
+    <ul>
+      <li>Rely on the App's exchange rates for financial trading or transactions without independent verification from authoritative sources.</li>
+      <li>Reverse-engineer, decompile, disassemble, or otherwise attempt to derive the source code of the App.</li>
+      <li>Modify, adapt, or create derivative works based on the App.</li>
+      <li>Use automated systems or scripts to access the App or its underlying data services in a manner that exceeds normal usage.</li>
+    </ul>
+
+    <h2>5. Disclaimers</h2>
+    <p>THE APP AND ITS EXCHANGE RATE DATA ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED.</p>
+    <ul>
+      <li>Exchange rates are for informational purposes only and do not constitute financial advice.</li>
+      <li>We do not guarantee the accuracy, completeness, or timeliness of any exchange rate data.</li>
+      <li>The App may be temporarily unavailable due to maintenance, server issues, or network connectivity problems.</li>
+      <li>The Frankfurter API (our exchange rate data source) is a third-party service that may experience outages or discontinuation outside our control.</li>
+    </ul>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>To the fullest extent permitted by applicable law, <span data-config="developerName">Sunil Sharma</span> shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to financial losses, arising from your use of or reliance on the App or its exchange rate data.</p>
+    <p>In no event shall our total liability exceed the amount you have paid for the App's subscription in the twelve (12) months preceding the claim.</p>
+
+    <h2>7. Intellectual Property</h2>
+    <p>The App's design, graphics, user interface, and original content are the property of <span data-config="developerName">Sunil Sharma</span> and are protected by applicable intellectual property laws. Exchange rate data is provided by the European Central Bank via the Frankfurter API.</p>
+
+    <h2>8. Termination</h2>
+    <p>We reserve the right to discontinue the App or any of its features at any time without prior notice. Upon termination, your right to use the App ceases. Cancellation of your subscription can be done through your device's subscription settings.</p>
+
+    <h2>9. Governing Law</h2>
+    <p>These Terms of Use shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles.</p>
+
+    <h2>10. Changes to These Terms</h2>
+    <p>We may update these Terms of Use from time to time. When we do, we will revise the effective date at the top of this page. Continued use of the App after changes constitutes acceptance of the revised terms.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have questions about these Terms of Use, please contact us at <a data-config="contactEmail"></a>.</p>
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <p>&copy; 2026 <span data-config="developerName">Sunil Sharma</span>. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    var siteNav = document.getElementById("site-nav");
+    function updateNavScrollState() {
+      siteNav.classList.toggle("nav--scrolled", window.scrollY > 8);
+    }
+    document.addEventListener("scroll", updateNavScrollState, { passive: true });
+    updateNavScrollState();
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — SwiftFX - Currency Converter</title>
+  <script src="config.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="app-icon.png" alt="" class="nav-logo">
+        <span class="nav-brand-full">SwiftFX - Currency Converter</span>
+        <span class="nav-brand-short">SwiftFX</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Support</h1>
+    <p class="subtitle">We're here to help</p>
+
+    <h2>Contact Us</h2>
+    <p>For questions, feedback, or issues with <span data-config="appName">SwiftFX - Currency Converter</span>, please reach out to us at:</p>
+    <p><a data-config="contactEmail"></a></p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>How do I manage or cancel my subscription?</h3>
+      <p>Open the Settings app on your iOS device, tap your name at the top, then tap Subscriptions. Find SwiftFX - Currency Converter in the list and tap it to manage or cancel your subscription. Cancellation takes effect at the end of the current billing period.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I restore my purchases on a new device?</h3>
+      <p>Open SwiftFX - Currency Converter, go to Settings, and tap "Get Premium". On the paywall screen, tap "Restore Purchases". Make sure you are signed in with the same Apple ID that was used for the original purchase.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Where do the exchange rates come from?</h3>
+      <p>Exchange rates are sourced from the <a href="https://frankfurter.dev" target="_blank" rel="noopener">Frankfurter API</a>, which provides reference rates published by the European Central Bank (ECB). These rates are indicative and may differ from the rates offered by banks or currency exchanges.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Why are the exchange rates different from my bank's rates?</h3>
+      <p>The rates in the App are mid-market reference rates from the European Central Bank. Banks and currency exchanges typically add a margin or fee on top of these reference rates. The App's rates should be used for informational purposes only.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I use the App offline?</h3>
+      <p>Yes. The App caches exchange rates locally on your device. When you have no internet connection, it uses the most recently cached rates. The rates will update automatically when connectivity is restored.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I opt out of personalized ads?</h3>
+      <p>Go to your device's Settings &gt; Privacy &amp; Security &gt; Tracking, and disable tracking for SwiftFX - Currency Converter. You will continue to see ads, but they will not be personalized. Alternatively, you can subscribe to premium to remove all ads.</p>
+    </div>
+
+    <h2>Privacy Requests</h2>
+    <p>If you would like to exercise your rights under GDPR, CCPA, or other applicable privacy regulations, please review our <a href="privacy.html">Privacy Policy</a> and contact us at <a data-config="contactEmail"></a>.</p>
+
+    <footer class="footer">
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+      <p>&copy; 2026 <span data-config="developerName">Sunil Sharma</span>. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    var siteNav = document.getElementById("site-nav");
+    function updateNavScrollState() {
+      siteNav.classList.toggle("nav--scrolled", window.scrollY > 8);
+    }
+    document.addEventListener("scroll", updateNavScrollState, { passive: true });
+    updateNavScrollState();
+  </script>
+</body>
+</html>
