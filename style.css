@@ -191,6 +191,13 @@ li {
   margin-bottom: 32px;
 }
 
+/* Page-level tagline under an H1 */
+.page-tagline {
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
 /* Cards */
 .card {
   background-color: var(--color-surface);
